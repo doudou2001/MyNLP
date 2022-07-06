@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户登录</title>
+    <style>
+      body{
+        background: url('../static/images/background.png') no-repeat top center;;
+      }
+      .head {
+        height: 7vh;
+      }
+      .systemName {
+        margin-top: 5px;
+        font-size: x-large;
+        font-weight: 600;
+        color: white;
+        margin-left: 40px;
+        justify-content: left;
+        align-content: center;
+        float: left;
+      }
+      .tourist {
+        margin-top: 5px;
+        height: 30px;
+        width: 90px;
+        font-weight: 600;
+        color: white;
+        background-color: rgb(36, 148, 234);
+        margin-right: 30px;
+        border-radius: 5px;
+        padding-top: 4px;
+        text-align: center;
+        float: right;
+      }
+      .body {
+        height: 90vh;
+        /*background-color: #ddd;*/
+        display: flex;
+      }
+      .info {
+        height: 400px;
+        width: 400px;
+        margin: 100px auto;
+        border-radius: 20px;
+        /*background-color: #ffffff;*/
+      }
+      .title {
+        height: 50px;
+        width: 200px;
+        margin: 50px auto;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 600;
+        color: white;
+      }
+      .usrInfo {
+        margin: 30px auto;
+        height: 30px;
+        width: 300px;
+        font-size: 16px;
+        border: white 1px solid;
+        padding-left: 10px;
+        padding-top: 2px;
+        border-radius: 5px;
+        color: white;
+      }
+      .usrInfo:focus {
+        border: #2277ff 1px solid;
+      }
+      input {
+        margin-left: 30px;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        height: 25px;
+        width: 170px;
+      }
+      input::-webkit-input-placeholder {
+        color: #bbb;
+        padding-left: 5px;
+      }
+      .btn {
+        height: 40px;
+        width: 310px;
+        background-color: rgb(36, 148, 234);
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 30px auto 20px auto;
+        padding-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .others {
+        height: 50px;
+        width: 310px;
+        margin: 20px auto;
+        font-size: 13px;
+      }
+      .register {
+        float: left;
+        margin-left: 10px;
+        text-decoration:none;
+        color: white;
+      }
+      .register:hover {
+        color: rgb(36, 148, 234);
+      }
+      .forgetPwd {
+        float: right;
+        margin-right: 10px;
+        text-decoration:none;
+        color: white;
+      }
+      .forgetPwd:hover {
+        color: rgb(36, 148, 234);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="head">
+      <div class="systemName">MyNLP</div>
+      <div class="tourist"><a href="visual" style="text-decoration:none; color: white;">游客登录</a></div>
+    </div>
+    <div class="body">
+      <div class="info">
+        <div>
+          <div class="title">用户登录</div>
+          <div class="usrInfo">
+            账号<input id='account' type="text" placeholder="请输入用户账号" />
+          </div>
+          <div class="usrInfo">
+            密码<input id='pwd' type="password" placeholder="请输入用户密码" />
+          </div>
+          <div class="btn" onclick="login_btn()">登录</div>
+        </div>
+        <div class="others">
+          <a class="register" href="register">用户注册</a>
+          <a class="forgetPwd" href="forgetPwd">忘记密码</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/js/login.js"></script>
+    <script src="../static/js/jquery-3.5.1.min.js"></script>
+<!--    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>-->
+  </body>
+</html>
